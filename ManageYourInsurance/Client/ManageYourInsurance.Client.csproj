@@ -25,4 +25,10 @@
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\PolicyAllocations\" />
+    <Folder Include="Pages\PolicyRequests\" />
+    <Folder Include="Pages\PolicyTypes\" />
+  </ItemGroup>
+
 </Project>

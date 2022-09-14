@@ -1,0 +1,78 @@
+﻿@page "/customers"
+@inject HttpClient _client
+
+
+<h3 class="card-title">Customer List</h3>
+<hr />
+<br />
+
+@if(Model == null)
+{
+  <div class="alert alert-info">Loading Customers...</div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    DisplayNameFor(model => model.EmailAddress)
+                </th>
+                <th>
+                    DisplayNameFor(model => model.TaxId)
+                </th>
+                <th>
+                    DisplayNameFor(model => model.ContactNumber)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        DisplayFor(modelItem => item.EmailAddress)
+                    </td>
+                    <td>
+                        DisplayFor(modelItem => item.TaxId)
+                    </td>
+                    <td>
+                        DisplayFor(modelItem => item.ContactNumber)
+                    </td>
+
+                    <td>
+
+                        <a asp-action="ViewAllocations" class="btn btn-primary" asp-route-id="@item.Id">View Allocations</a> |
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+@code {
+    private List<Customer> Model;
+
+    //protected async override Task OnInitializeAsync()
+    //{
+    //    Model = await _client.GetFromJsonAsync<List<Customer>>("customers");
+
+    //}
+
+
+}

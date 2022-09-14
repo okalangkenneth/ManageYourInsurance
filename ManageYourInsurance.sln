@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32721.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageYourInsurance.Server", "ManageYourInsurance\Server\ManageYourInsurance.Server.csproj", "{F678926C-08FC-4AEC-9529-A9266B6F2C52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManageYourInsurance.Server", "ManageYourInsurance\Server\ManageYourInsurance.Server.csproj", "{F678926C-08FC-4AEC-9529-A9266B6F2C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageYourInsurance.Client", "ManageYourInsurance\Client\ManageYourInsurance.Client.csproj", "{CADBDDDB-786D-446A-A020-56DE4408F915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManageYourInsurance.Client", "ManageYourInsurance\Client\ManageYourInsurance.Client.csproj", "{CADBDDDB-786D-446A-A020-56DE4408F915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageYourInsurance.Shared", "ManageYourInsurance\Shared\ManageYourInsurance.Shared.csproj", "{89EE8097-02E3-4473-99E3-8780AFFB397C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManageYourInsurance.Shared", "ManageYourInsurance\Shared\ManageYourInsurance.Shared.csproj", "{89EE8097-02E3-4473-99E3-8780AFFB397C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
